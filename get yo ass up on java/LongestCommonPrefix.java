@@ -35,5 +35,7 @@ public class LongestCommonPrefix {
         String[] words = {"flour", "flow", "flight"};
         String result = longestCommonPrefix(words);
         System.out.println(result);
+
+        sc.close();
     }
 }
