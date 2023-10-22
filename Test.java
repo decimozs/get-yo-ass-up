@@ -5,25 +5,37 @@ import java.util.Scanner;
  */
 
 public class Test {
-   public static void forwardLoop(int[] array){
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
+    public static String longestCommonPrefix(String[] words) {
+        if (words == null || words.length == 0) {
+            return "";
         }
-    } 
 
-    public static void backwardLoop(int[] array){
-        for (int i = array.length - 1; i >= 0; i--) {
-            System.out.print(array[i] + " ");
+        String prefix = words[0];
+        
+        for (int i = 0; i < words.length; i++) {
+            String current = words[i];
+            int j = 0;
+
+            while (j < prefix.length() && j < current.length() && prefix.charAt(j) == current.charAt(j)) {
+                j++;
+            }
+
+            prefix = prefix.substring(0, j);
+            
+            if (prefix.isEmpty()) {
+                return "";
+            }
         }
+
+        return prefix;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] array = {1,2,3,4,5,6,7,8,9,10};
-        forwardLoop(array);
-        System.out.println();
-        backwardLoop(array);
+        String[] words = {"flour", "flow", "flight"};
+        String result = longestCommonPrefix(words);
+        System.out.println(result);
 
         sc.close();
-    }
+   }
 }
