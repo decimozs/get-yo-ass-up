@@ -1,98 +1,34 @@
-import java.util.Arrays;
-import java.util.Scanner;
-
-/**
-* Test
- */
-
 public class Test {
-    public static int secret(int x) {
-        int i = 0;
-        int j = 0;
-        i = 2 * x;
-        if (i > 10) {
-            j = x / 2;
-        } else {
-            j = x / 3;
+    public static int maxSubarraySum(int[] arr, int k) {
+        if (k > arr.length) {
+            return -1; // Invalid input
         }
 
-        return j - 1;
-    }
+        int maxSum = Integer.MIN_VALUE;
+        int currentSum = 0;
 
-    public static void insertionSort(int[] arr) {
-        int counts = 0;
-        int n = arr.length;
-        for (int i = 1; i < n; i++) {
-            int key = arr[i];
-            int j = i - 1;
-
-            while (j >= 0 && arr[j] > key) {
-                arr[j + 1] = arr[j];
-                j--;
-            }
-            arr[j + 1] = key;
-            counts++;
-        }
-        System.out.println("Swap counts: " + counts);
-    }
-
-    public static void selectionSort(int[] arr) {
-        int n = arr.length;
-        int counts = 0;
-        for (int i = 0; i < n - 1; i++) {
-            int minIndex = i;
-            
-            for (int j = i + 1; j < n; j++) {
-                if (arr[j] < arr[minIndex]) {
-                    minIndex = j;
-                }
-            }
-            
-            int temp = arr[i];
-            arr[i] = arr[minIndex];
-            arr[minIndex] = temp;
-            counts++;
+        // Calculate the sum of the first 'k' elements
+        for (int i = 0; i < k; i++) {
+            currentSum += arr[i];
         }
 
-        System.out.println("Swap counts: " + counts);
-    }
-    public static void bubbleSort(int[] arr) {
-        int counts = 0;
-        int n = arr.length;
-        boolean swapped;
-        for (int i = 0; i < n - 1; i++) {
-            swapped = false;
-            for (int j = 0; j < n - 1 - i; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                    swapped = true;
-                    counts++;
-                }
-            }
-            if (!swapped) {
-                break;
-            }
+        maxSum = currentSum;
 
-            System.out.println("Swap counts: " + counts);
+        // Slide the window to calculate the maximum sum
+        for (int i = k; i < arr.length; i++) {
+            currentSum = currentSum - arr[i - k] + arr[i];
+            if (currentSum > maxSum) {
+                maxSum = currentSum;
+            }
         }
+
+        return maxSum;
     }
+
     public static void main(String[] args) {
-        int[] arr = {1,2,4,3};
-        bubbleSort(arr);
-        int secret = secret(12);
-        System.out.println(Arrays.toString(arr));
-        System.out.println("Secret: " + secret);
+        int[] arr = {2, 1, 5, 1, 3, 2};
+        int k = 3;
+        int result = maxSubarraySum(arr, k);
+        System.out.println("Maximum subarray sum: " + result);
     }
 }
-
-//set b
-// 9 10 11 15 18
-// 6 7 8 13 11
-// 10 36 66 53 34 23
-// 15 25 20 23 - 15 20 25 23 - 15 20 23 25
-
-//set a
-// 7 6 8 12 15
-// 3 4 5 10 18
