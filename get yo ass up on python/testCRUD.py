@@ -37,6 +37,7 @@ def read_student():
     
     print("[1] Retrieve all the student records")
     print("[2] Retrieve a specific student's individual record")
+    print("[3] Back to Main Menu")
 
     choice = input("\nEnter your choice: ")
     
@@ -48,7 +49,7 @@ def read_student():
             print(f"Age: {data['Age']}")
             print(f"Course: {data['Course']}")
             print(f"Year and Section: {data['Year and Section']}\n")
-    else:
+    elif choice == '2':
         student_number = int(input("Enter the student id: "))
         for index, data in enumerate(student):
             if data['Student id'] == student_number:
@@ -58,6 +59,8 @@ def read_student():
                 print(f"Age: {data['Age']}")
                 print(f"Course: {data['Course']}")
                 print(f"Year and Section: {data['Year and Section']}\n")
+    else:
+        return
     
 def update_student():
     print("\n[UPDATE STUDENT RECORD]\n")
