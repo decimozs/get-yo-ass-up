@@ -200,7 +200,6 @@ def update_student():
             print("[SUCCESSFULL OPERATION] - SUCCESSFULLY UPDATED STUDENT RECORD\n")
             
         elif update_choice == '4':
-            
             while True:
                 try:
                     change_age = int(input("ENTER NEW AGE: "))
@@ -250,7 +249,7 @@ def update_student():
             change_course = input("ENTER NEW COURSE: ").upper()
             change_year_and_section = input("ENTER NEW YEAR & SECTION: ").upper()
             
-            update_all_information = "UPDATE students SET first_name = %s, last_name = %s, middle_initial = %s, age = %s, course = %s, year_and_section = %s WHERE student_id = %s"
+            update_all_information = "update students set first_name = %s, last_name = %s, middle_initial = %s, age = %s, course = %s, year_and_section = %s WHERE student_id = %s"
             cursor.execute(update_all_information, (change_first_name, change_last_name, change_middle_initial, change_age, change_course, change_year_and_section, student_id))
             
             os.system('cls')
