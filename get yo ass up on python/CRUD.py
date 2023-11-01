@@ -116,6 +116,7 @@ def read_student():
             print(f"Age: {student[4]}")
             print(f"Course: {student[5]}")
             print(f"Year and Section: {student[6]}")
+            
         else:
             os.system('cls')
             print("\n[UNSUCCESSFUL OPERATION] - STUDENT NOT FOUND!\n")
@@ -123,6 +124,7 @@ def read_student():
         
     elif choice == '3':
         return
+    
     else:
         os.system('cls')
         print("\n[NOTE] - INVALID CHOICE! PLEASE ENTER A VALID OPTION.\n")
@@ -174,6 +176,7 @@ def update_student():
             
             print("\n[STUDENT FIRST NAME UPDATED]")
             print("[SUCCESSFULL OPERATION] - SUCCESSFULLY UPDATED STUDENT RECORD\n")
+            
         elif update_choice == '2':
             change_last_name = input("ENTER NEW LAST NAME: ").upper()
             update_last_name = "update students set last_name = %s where student_id = %s" 
@@ -184,6 +187,7 @@ def update_student():
             os.system('cls')
             print("\n[STUDENT LAST NAME UPDATED]")
             print("[SUCCESSFULL OPERATION] - SUCCESSFULLY UPDATED STUDENT RECORD\n")
+            
         elif update_choice == '3':
             change_middle_initial = input("ENTER NEW MIDDLE INITIAL: ").upper()
             update_middle_inital = "update students set middle_initial = %s where student_id = %s" 
@@ -194,6 +198,7 @@ def update_student():
             os.system('cls')
             print("\n[STUDENT MIDDLE INITAL UPDATED]")
             print("[SUCCESSFULL OPERATION] - SUCCESSFULLY UPDATED STUDENT RECORD\n")
+            
         elif update_choice == '4':
             
             while True:
@@ -212,6 +217,7 @@ def update_student():
             
             print("\n[STUDENT AGE UPDATED]")
             print("[SUCCESSFULL OPERATION] - SUCCESSFULLY UPDATED STUDENT RECORD\n")
+            
         elif update_choice == '5':
             change_course = input("ENTER NEW COURSE: ").upper()
             update_course = "update students set course = %s where student_id = %s"
@@ -223,6 +229,7 @@ def update_student():
             
             print("\n[STUDENT COURSE UPDATED]")
             print("[SUCCESSFULL OPERATION] - SUCCESSFULLY UPDATED STUDENT RECORD\n")
+            
         elif update_choice == '6':
             change_year_and_section = input("ENTER NEW YEAR & SECTION: ").upper()
             update_year_and_section = "update students set year_and_section = %s where student_id = %s"
@@ -234,6 +241,7 @@ def update_student():
             
             print("\n[STUDENT YEAR & SECTION UPDATED]")
             print("[SUCCESSFULL OPERATION] - SUCESSFULLY UPDATED STUDENT RECORD\n")
+            
         elif update_choice == '7':
             change_first_name = input("ENTER NEW FIRST NAME: ").upper()
             change_last_name = input("ENTER NEW LAST NAME: ").upper()
@@ -249,11 +257,14 @@ def update_student():
             
             print("\n[STUDENT RECORD UPDATED]")
             print("[SUCCESSFULL OPERATION] - SUCCESSFULLY UPDATED STUDENT RECORD\n")
+            
         elif update_choice == '8':
             return
+        
         else:
             print("\n[NOTE] - INVALID CHOICE! PLEASE ENTER A VALID OPTION.\n")
             return
+        
     else:
         print("\n[UNSUCCESSFUL OPERATION] - STUDENT NOT FOUND!\n")
         return
@@ -287,6 +298,7 @@ def delete_student():
         
         os.system('cls')
         print("[SUCCESSFULL OPERATION] - SUCCESSFULLY DELETED")
+        
     elif delete_choice == '2':
         delete_all_query = "delete from students"
         reset_query = "alter table students auto_increment = 1"
@@ -298,8 +310,10 @@ def delete_student():
         os.system('cls')
         
         print("\n[SUCCESSFULL OPERATION] - SUCCESSFULLY DELETED ALL RECORDS\n") 
+        
     elif delete_choice == '3':
         return
+    
     else:
         print("\n[NOTE] - INVALID CHOICE! PLEASE ENTER A VALID OPTION.\n")
         return
@@ -307,8 +321,8 @@ def delete_student():
 def exit_app():
     os.system('cls')
     print("\n[THANK FOR USING MY SIMPLE CRUD APP!]\n")
-    print("NAME: MARTIN, MARLON A.")
-    print("YEAR & SECTION: BSIT - 2C")
+    print("[NAME] - MARTIN, MARLON A.")
+    print("[YEAR & SECTION] - BSIT - 2C\n")
     
     sys.exit(0)
 
