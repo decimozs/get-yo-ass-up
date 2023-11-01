@@ -15,7 +15,7 @@ connection = mysql.connector.connect (
 
 cursor = connection.cursor()
 
-cursor.execute(f"USE {database}")
+cursor.execute(f"use {database}")
 
 create_table = """
 create table if not exists students (
@@ -50,17 +50,22 @@ def create_student():
     
     course = input("COURSE: ").upper()
     year_and_section = input("YEAR AND SECTION: ").upper()
+    
     insert_query = "INSERT INTO students (first_name, last_name, middle_initial, age, course, year_and_section) VALUES (%s, %s, %s, %s, %s, %s)"
     data = (first_name, last_name, middle_initial, age, course, year_and_section)
+    
     cursor.execute(insert_query, data)
     connection.commit()
+    
     os.system('cls')
+    
     print("\n[SUCCESSFUL OPERATION] - STUDENT RECORD CREATED!\n")
 
 def read_student():
     os.system('cls')
     
     count_query = "select count(*) from students"
+    
     cursor.execute(count_query)
     length_query = cursor.fetchone()[0]
     
@@ -77,8 +82,10 @@ def read_student():
     
     if choice == '1':
         select_all_query = "select * from students"
+        
         cursor.execute(select_all_query)
         students = cursor.fetchall()
+        
         os.system('cls')
         
         for student in students:
@@ -94,8 +101,10 @@ def read_student():
     elif choice == '2':
         student_id = int(input("\nPLEASE ENTER THE STUDENT ID: "))
         select_specific_query = "select * from students where student_id = %s"
+        
         cursor.execute(select_specific_query, (student_id,))
         student = cursor.fetchone()
+        
         os.system('cls')
         
         if student:
@@ -123,6 +132,7 @@ def update_student():
     os.system('cls')
     
     count_query = "select count(*) from students"
+    
     cursor.execute(count_query)
     length_query = cursor.fetchone()[0]
     
@@ -133,8 +143,10 @@ def update_student():
     print("\n[UPDATE STUDENT RECORD]\n")
     student_id = int(input("\nPLEASE ENTER THE STUDENT ID: "))
     select_specific_query = "select * from students where student_id = %s"
+    
     cursor.execute(select_specific_query, (student_id,))
     student = cursor.fetchone()
+    
     os.system('cls')
     
     if student:
@@ -154,24 +166,31 @@ def update_student():
         if update_choice == '1':
             change_first_name = input("ENTER NEW FIRST NAME: ").upper()
             update_first_name = "update students set first_name = %s where student_id = %s"
+            
             cursor.execute(update_first_name, (change_first_name, student_id,))
             connection.commit()
+            
             os.system('cls')
+            
             print("\n[STUDENT FIRST NAME UPDATED]")
             print("[SUCCESSFULL OPERATION] - SUCCESSFULLY UPDATED STUDENT RECORD\n")
         elif update_choice == '2':
             change_last_name = input("ENTER NEW LAST NAME: ").upper()
             update_last_name = "update students set last_name = %s where student_id = %s" 
+            
             cursor.execute(update_last_name, (change_last_name, student_id,))
             connection.commit()
+            
             os.system('cls')
             print("\n[STUDENT LAST NAME UPDATED]")
             print("[SUCCESSFULL OPERATION] - SUCCESSFULLY UPDATED STUDENT RECORD\n")
         elif update_choice == '3':
             change_middle_initial = input("ENTER NEW MIDDLE INITIAL: ").upper()
             update_middle_inital = "update students set middle_initial = %s where student_id = %s" 
+            
             cursor.execute(update_middle_inital, (change_middle_initial, student_id,))
             connection.commit()
+            
             os.system('cls')
             print("\n[STUDENT MIDDLE INITAL UPDATED]")
             print("[SUCCESSFULL OPERATION] - SUCCESSFULLY UPDATED STUDENT RECORD\n")
@@ -185,25 +204,34 @@ def update_student():
                     print("\n[NOTE] - PLEASE ENTER A VALID INTEGER FOR AGE\n")
                     
             update_age = "update students set age = %s where student_id = %s" 
+            
             cursor.execute(update_age, (change_age, student_id,))
             connection.commit()
+            
             os.system('cls')
+            
             print("\n[STUDENT AGE UPDATED]")
             print("[SUCCESSFULL OPERATION] - SUCCESSFULLY UPDATED STUDENT RECORD\n")
         elif update_choice == '5':
             change_course = input("ENTER NEW COURSE: ").upper()
-            update_course = "update students set course = %s where student_id = %s" 
+            update_course = "update students set course = %s where student_id = %s"
+             
             cursor.execute(update_course, (change_course, student_id,))
             connection.commit()
+            
             os.system('cls')
+            
             print("\n[STUDENT COURSE UPDATED]")
             print("[SUCCESSFULL OPERATION] - SUCCESSFULLY UPDATED STUDENT RECORD\n")
         elif update_choice == '6':
             change_year_and_section = input("ENTER NEW YEAR & SECTION: ").upper()
-            update_year_and_section = "update students set year_and_section = %s where student_id = %s" 
+            update_year_and_section = "update students set year_and_section = %s where student_id = %s"
+             
             cursor.execute(update_year_and_section, (change_year_and_section, student_id,))
             connection.commit()
+            
             os.system('cls')
+            
             print("\n[STUDENT YEAR & SECTION UPDATED]")
             print("[SUCCESSFULL OPERATION] - SUCESSFULLY UPDATED STUDENT RECORD\n")
         elif update_choice == '7':
@@ -213,9 +241,12 @@ def update_student():
             change_age = input("ENTER NEW AGE: ")
             change_course = input("ENTER NEW COURSE: ").upper()
             change_year_and_section = input("ENTER NEW YEAR & SECTION: ").upper()
+            
             update_all_information = "UPDATE students SET first_name = %s, last_name = %s, middle_initial = %s, age = %s, course = %s, year_and_section = %s WHERE student_id = %s"
             cursor.execute(update_all_information, (change_first_name, change_last_name, change_middle_initial, change_age, change_course, change_year_and_section, student_id))
+            
             os.system('cls')
+            
             print("\n[STUDENT RECORD UPDATED]")
             print("[SUCCESSFULL OPERATION] - SUCCESSFULLY UPDATED STUDENT RECORD\n")
         elif update_choice == '8':
@@ -250,17 +281,22 @@ def delete_student():
         print("\n[DELETE SPECIFIC STUDENT RECORD]\n")
         student_id = int(input("\nPLEASE ENTER THE STUDENT ID: "))
         delete_specific_query = "delete from students where student_id = %s"
+        
         cursor.execute(delete_specific_query, (student_id,))
         connection.commit()
+        
         os.system('cls')
         print("[SUCCESSFULL OPERATION] - SUCCESSFULLY DELETED")
     elif delete_choice == '2':
         delete_all_query = "delete from students"
         reset_query = "alter table students auto_increment = 1"
+        
         cursor.execute(delete_all_query)
         cursor.execute(reset_query)
         connection.commit()
+        
         os.system('cls')
+        
         print("\n[SUCCESSFULL OPERATION] - SUCCESSFULLY DELETED ALL RECORDS\n") 
     elif delete_choice == '3':
         return
