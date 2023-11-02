@@ -38,4 +38,16 @@ public class Math {
         return 0;
     }
 
+    public static int abs(int i) {
+        return 0;
+    }
+
+    public static int log10(int i) {
+        return 0;
+    }
+
+    public static int sqrt(int i) {
+        return 0;
+    }
+
 }
