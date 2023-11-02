@@ -30,4 +30,12 @@ public class Math {
         }
     }
 
+    public static int min(int i, int j) {
+        return 0;
+    }
+
+    public static int max(int maxWater, int area) {
+        return 0;
+    }
+
 }
