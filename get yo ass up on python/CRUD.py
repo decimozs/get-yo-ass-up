@@ -348,6 +348,7 @@ def main():
             exit_app()
             break
         else:
+            os.system('cls')
             print("\n[NOTE] - INVALID CHOICE! PLEASE ENTER A VALID OPTION.\n")
             
 if __name__ == '__main__':
