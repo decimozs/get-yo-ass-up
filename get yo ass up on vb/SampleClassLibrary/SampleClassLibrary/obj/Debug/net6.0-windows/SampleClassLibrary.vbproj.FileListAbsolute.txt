@@ -1,0 +1,11 @@
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\SampleClassLibrary\SampleClassLibrary\bin\Debug\net6.0-windows\SampleClassLibrary.deps.json
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\SampleClassLibrary\SampleClassLibrary\bin\Debug\net6.0-windows\SampleClassLibrary.dll
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\SampleClassLibrary\SampleClassLibrary\bin\Debug\net6.0-windows\SampleClassLibrary.pdb
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\SampleClassLibrary\SampleClassLibrary\obj\Debug\net6.0-windows\SampleClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\SampleClassLibrary\SampleClassLibrary\obj\Debug\net6.0-windows\SampleClassLibrary.AssemblyInfoInputs.cache
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\SampleClassLibrary\SampleClassLibrary\obj\Debug\net6.0-windows\SampleClassLibrary.AssemblyInfo.vb
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\SampleClassLibrary\SampleClassLibrary\obj\Debug\net6.0-windows\SampleClassLibrary.vbproj.CoreCompileInputs.cache
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\SampleClassLibrary\SampleClassLibrary\obj\Debug\net6.0-windows\SampleClassLibrary.dll
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\SampleClassLibrary\SampleClassLibrary\obj\Debug\net6.0-windows\refint\SampleClassLibrary.dll
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\SampleClassLibrary\SampleClassLibrary\obj\Debug\net6.0-windows\SampleClassLibrary.pdb
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\SampleClassLibrary\SampleClassLibrary\obj\Debug\net6.0-windows\ref\SampleClassLibrary.dll
