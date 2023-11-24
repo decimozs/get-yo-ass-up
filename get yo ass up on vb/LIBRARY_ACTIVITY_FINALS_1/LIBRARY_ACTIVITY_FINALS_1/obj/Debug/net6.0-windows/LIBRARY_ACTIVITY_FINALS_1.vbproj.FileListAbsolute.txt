@@ -1,0 +1,11 @@
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\LIBRARY_ACTIVITY_FINALS_1\LIBRARY_ACTIVITY_FINALS_1\bin\Debug\net6.0-windows\LIBRARY_ACTIVITY_FINALS_1.deps.json
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\LIBRARY_ACTIVITY_FINALS_1\LIBRARY_ACTIVITY_FINALS_1\bin\Debug\net6.0-windows\LIBRARY_ACTIVITY_FINALS_1.dll
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\LIBRARY_ACTIVITY_FINALS_1\LIBRARY_ACTIVITY_FINALS_1\bin\Debug\net6.0-windows\LIBRARY_ACTIVITY_FINALS_1.pdb
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\LIBRARY_ACTIVITY_FINALS_1\LIBRARY_ACTIVITY_FINALS_1\obj\Debug\net6.0-windows\LIBRARY_ACTIVITY_FINALS_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\LIBRARY_ACTIVITY_FINALS_1\LIBRARY_ACTIVITY_FINALS_1\obj\Debug\net6.0-windows\LIBRARY_ACTIVITY_FINALS_1.AssemblyInfoInputs.cache
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\LIBRARY_ACTIVITY_FINALS_1\LIBRARY_ACTIVITY_FINALS_1\obj\Debug\net6.0-windows\LIBRARY_ACTIVITY_FINALS_1.AssemblyInfo.vb
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\LIBRARY_ACTIVITY_FINALS_1\LIBRARY_ACTIVITY_FINALS_1\obj\Debug\net6.0-windows\LIBRARY_ACTIVITY_FINALS_1.vbproj.CoreCompileInputs.cache
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\LIBRARY_ACTIVITY_FINALS_1\LIBRARY_ACTIVITY_FINALS_1\obj\Debug\net6.0-windows\LIBRARY_ACTIVITY_FINALS_1.dll
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\LIBRARY_ACTIVITY_FINALS_1\LIBRARY_ACTIVITY_FINALS_1\obj\Debug\net6.0-windows\refint\LIBRARY_ACTIVITY_FINALS_1.dll
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\LIBRARY_ACTIVITY_FINALS_1\LIBRARY_ACTIVITY_FINALS_1\obj\Debug\net6.0-windows\LIBRARY_ACTIVITY_FINALS_1.pdb
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\LIBRARY_ACTIVITY_FINALS_1\LIBRARY_ACTIVITY_FINALS_1\obj\Debug\net6.0-windows\ref\LIBRARY_ACTIVITY_FINALS_1.dll

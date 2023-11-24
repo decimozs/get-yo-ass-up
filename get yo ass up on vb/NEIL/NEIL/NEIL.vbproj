@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>NEIL</RootNamespace>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>NEIL</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+</Project>

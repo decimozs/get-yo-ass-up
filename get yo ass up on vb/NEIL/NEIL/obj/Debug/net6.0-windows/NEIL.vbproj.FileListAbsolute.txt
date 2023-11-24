@@ -1,0 +1,11 @@
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\NEIL\NEIL\bin\Debug\net6.0-windows\NEIL.deps.json
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\NEIL\NEIL\bin\Debug\net6.0-windows\NEIL.dll
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\NEIL\NEIL\bin\Debug\net6.0-windows\NEIL.pdb
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\NEIL\NEIL\obj\Debug\net6.0-windows\NEIL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\NEIL\NEIL\obj\Debug\net6.0-windows\NEIL.AssemblyInfoInputs.cache
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\NEIL\NEIL\obj\Debug\net6.0-windows\NEIL.AssemblyInfo.vb
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\NEIL\NEIL\obj\Debug\net6.0-windows\NEIL.vbproj.CoreCompileInputs.cache
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\NEIL\NEIL\obj\Debug\net6.0-windows\NEIL.dll
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\NEIL\NEIL\obj\Debug\net6.0-windows\refint\NEIL.dll
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\NEIL\NEIL\obj\Debug\net6.0-windows\NEIL.pdb
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\NEIL\NEIL\obj\Debug\net6.0-windows\ref\NEIL.dll

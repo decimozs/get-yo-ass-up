@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "test_case_study_information_management/1.0.0": {
+        "runtime": {
+          "test_case_study_information_management.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "test_case_study_information_management/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>LIBRARY_ACTIVITY_FINALS_1</RootNamespace>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>LIBRARY_ACTIVITY_FINALS_1</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+</Project>

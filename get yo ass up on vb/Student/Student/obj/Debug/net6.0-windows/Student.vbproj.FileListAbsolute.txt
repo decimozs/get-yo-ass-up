@@ -1,0 +1,11 @@
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\Student\Student\bin\Debug\net6.0-windows\Student.deps.json
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\Student\Student\bin\Debug\net6.0-windows\Student.dll
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\Student\Student\bin\Debug\net6.0-windows\Student.pdb
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\Student\Student\obj\Debug\net6.0-windows\Student.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\Student\Student\obj\Debug\net6.0-windows\Student.AssemblyInfoInputs.cache
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\Student\Student\obj\Debug\net6.0-windows\Student.AssemblyInfo.vb
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\Student\Student\obj\Debug\net6.0-windows\Student.vbproj.CoreCompileInputs.cache
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\Student\Student\obj\Debug\net6.0-windows\Student.dll
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\Student\Student\obj\Debug\net6.0-windows\refint\Student.dll
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\Student\Student\obj\Debug\net6.0-windows\Student.pdb
+C:\Users\acer\Documents\get yo ass up\get yo ass up on vb\Student\Student\obj\Debug\net6.0-windows\ref\Student.dll
